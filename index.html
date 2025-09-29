@@ -114,7 +114,7 @@
 
       try {
         buttonEl.disabled = true;
-        const res = await fetch("https://s517.app.n8n.cloud/webhook/tg-webapp-branch", {
+        const res = await fetch(WEBHOOK_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           mode: 'cors',
@@ -195,4 +195,3 @@
   </script>
 </body>
 </html>
-
